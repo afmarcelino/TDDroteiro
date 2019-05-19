@@ -4,8 +4,7 @@ class Dollar extends Money {
 		this.amount = amount;
 	}
 	
-	Dollar times(int multiplier) {
-		amount = amount * multiplier;
-		return new Dollar(amount);
+	Money times(int multiplier) {
+		return new Dollar(amount * multiplier);
 	}
 }
